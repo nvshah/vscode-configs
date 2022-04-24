@@ -1,0 +1,210 @@
+{
+    "dart.flutterSdkPath": "/Users/nipunshah/Developer/flutter",
+    //"dart.flutterSdkPath": "/Users/nipunshah/fvm/default/bin",
+    //"dart.flutterSdkPath": ".fvm/flutter_sdk",
+    // Remove .fvm files from search
+    "search.exclude": {
+      "**/.fvm": true
+    },
+    // Remove from file watching
+    "files.watcherExclude": {
+      "**/.fvm": true
+    },
+    
+    //"dart.flutterSdkPaths": ["/Users/nipunshah/fvm/versions"],
+    
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false,
+        "editor.parameterHints.enabled": true,
+    },
+    "update.mode": "manual",
+    "extensions.autoCheckUpdates": false,
+    "extensions.autoUpdate": false,
+    "python.pythonPath": "/usr/local/bin/python3",
+    "python.defaultInterpreterPath": "/Users/nipunshah/opt/anaconda3/bin/python",
+    "editor.lineHeight": 17,
+    "editor.fontFamily": "MonoLisa, Operator Mono Lig, Lotion, JetBrains Mono, Fira Code iScript, Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    //"todo-tree.tree.showScanModeButton": false,
+    "dart.previewFlutterUiGuides": true,
+    "workbench.colorCustomizations": {
+    
+    "[One Dark Pro]": {
+      "statusBar.debuggingBackground": "#212121",  
+      "statusBar.background": "#022831",
+      },  
+    },
+    "material-icon-theme.folders.associations": {
+      "global_state": "global",
+      "ui": "layout",
+      "bloc": "controller"
+    },
+    "oneDarkPro.editorTheme": "oneDarkPro",
+    "oneDarkPro.vivid": true,
+    "editor.tokenColorCustomizations": {
+      "[One Dark Pro]": {
+        "functions": "#7b9ad7",
+        "variables": "#df6695",
+        "strings": "#8fc98e",
+        "types": "#d3b76e",
+        "keywords": "#ec91ae",
+        //"keywords": "#c057c0",
+        "textMateRules": [
+          {
+            "name": "ControlKeywords",
+            "scope": ["keyword.control.dart", "keyword.control.catch-exception.dart"],
+            "settings": { "fontStyle": "italic", "foreground": "#bd83d2" }
+          },
+          {
+            "name": "Annotation",
+            "scope": ["storage.type.annotation.dart", "entity.name.function.decorator.python", "keyword.other.python"],
+            "settings": { "foreground": "#49b998" }
+          },
+          {
+            "name": "ModifierKeywords",
+            "scope": ["storage.modifier.dart"],
+            "settings": { "foreground": "#4eb0bb", "fontStyle": "italic" }
+          },
+          {
+            "name": "DeclarationKeywords",
+            "scope": ["keyword.declaration.dart"],
+            // "settings": { "foreground": "#bd83d2" }
+            "settings": { "foreground": "#df7a93" }
+          },
+          {
+            "name": "LanguageVariables",
+            "scope": ["variable.language.dart", "variable.language.python", "support.function.builtin.python"],
+            "settings": { "foreground": "#4eb0bb", "fontStyle": "italic bold" }
+          },
+          {
+            "name": "Import",
+            "scope": ["keyword.other.import.dart", "keyword.control.import.python", "keyword.control.import.from.python"],
+            "settings": { "foreground": "#df7277" }
+          },
+          {
+            "name": "Void",
+            "scope": ["storage.type.primitive.dart"],
+            "settings": { "foreground": "#d3b76e" }
+          },
+          {
+            "name": "ParameterFunction",
+            "scope": ["variable.parameter.function.python", "meta.function.decorator.arguments.python", "meta.function-call.arguments.python"],
+            "settings": { "foreground": "#90bbd2" }
+          },
+          {
+            "name": "magic-python",
+            "scope": ["support.function.magic.python", "support.variable.magic.python"],
+            "settings": { "foreground": "#d77e8b" }
+          },
+          
+          {
+            "name": "python-function-call",
+            "scope": ["meta.function-call.python"],
+            "settings": { "foreground": "#d3b76e" }
+          },
+
+          {
+            "name": "python-variable-declaration",
+            "scope": ["variable.other.readwrite"],
+            "settings": { "foreground": "#bfb9c0" }
+          },
+        ],
+      },
+    },
+    "diffEditor.renderSideBySide": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "dart.warnWhenEditingFilesInPubCache": false,
+    //"terminal.integrated.shell.osx": "/bin/zsh",
+    "problems.showCurrentInStatus": true,
+    "editor.suggestSelection": "first",
+    "workbench.colorTheme": "One Dark Pro",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true,
+    },
+    //"sourcery.token": "py",
+    "[json]": {
+      "editor.quickSuggestions": {
+        "strings": true
+      },
+      "editor.suggest.insertMode": "replace"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "code-runner.executorMap": {
+
+      "javascript": "node",
+      "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+      "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "php": "php",
+      //"python": "python -u",
+      "python": "python3 -u",
+      "perl": "perl",
+      "perl6": "perl6",
+      "ruby": "ruby",
+      "go": "go run",
+      "lua": "lua",
+      "groovy": "groovy",
+      "powershell": "powershell -ExecutionPolicy ByPass -File",
+      "bat": "cmd /c",
+      "shellscript": "bash",
+      "fsharp": "fsi",
+      //"csharp": "scriptcs",
+      "csharp": "dotnet run",
+      "vbscript": "cscript //Nologo",
+      "typescript": "ts-node",
+      "coffeescript": "coffee",
+      "scala": "scala",
+      "swift": "swift",
+      "julia": "julia",
+      "crystal": "crystal",
+      "ocaml": "ocaml",
+      "r": "Rscript",
+      "applescript": "osascript",
+      "clojure": "lein exec",
+      "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+      "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+      "racket": "racket",
+      "scheme": "csi -script",
+      "ahk": "autohotkey",
+      "autoit": "autoit3",
+      "dart": "dart",
+      "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+      "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+      "haskell": "runhaskell",
+      "nim": "nim compile --verbosity:0 --hints:off --run",
+      "lisp": "sbcl --script",
+      "kit": "kitc --run",
+      "v": "v run",
+      "sass": "sass --style expanded",
+      "scss": "scss --style expanded",
+      "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+      "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+    //"dart.sdkPath": "/Users/nipunshah/Developer/flutter/bin/cache/dart-sdk",
+    //"dart.sdkPath": "/Users/nipunshah/Developer/flutter/bin/cache/dart-sdk",
+    "[python]":{
+      "editor.formatOnSave": false
+    },
+    "files.exclude": {
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true
+    },
+    "workbench.sideBar.location": "right",
+    "window.zoomLevel": 1
+}

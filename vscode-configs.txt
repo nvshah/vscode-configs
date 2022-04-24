@@ -1,0 +1,139 @@
+vscode-configs
+
+-> Extensions :
+
+1) advance new file
+2) Auto close tag
+3) Auto rename tag
+4) Auto Open Markdown preview
+5) C/C++
+6) Competitive Programming Helper (cph)
+7) Highlight Matching Tag 
+8) image Preview
+9) Name that Color
+10) VSCode-Anime-Motivator
+
+1) file-icons
+2) Path Intellisense
+3) Presentation mode
+4) Quokka.js
+5) vscode-icons 
+6) vscode-styled-components
+7) WakaTime
+
+1) CSV to Table
+2) Json
+3) Jumpy
+4) live-Share
+5) Paste Json as Code
+6) Rainbow CSV
+7) TabOut
+8) Code Runner
+9) Log File highlighter
+
+1) Prettier - Code Formatter
+2) Prettify Json
+3) Remove Comments 
+4) REST Client 
+5) Settings Sync
+6) socket.io client for vscode 
+7) Thunder Client
+
+
+* Git
+
+  1) git blame
+  2) git cheatsheet
+  3) git history
+  4) git history diff
+  5) github
+  6) Github Pull Requests and Issue
+  7) Github Theme 
+  8) Start git-bash
+  9) GitLens
+  10) 
+  11) indent rainbow
+
+
+* Colors :
+ 
+  1) Ariake Dark
+  2) Atom One Dark Theme
+  3) Atom one light Theme
+  4) Github Light Theme
+  5) Hop Light
+  6) Material Darker+
+  7) Material Icon Theme 
+  8) Material Theme 
+  9) Material Theme icons
+  10) Monokai light 
+  11) Monokai Pro 
+  12) Naruto Shippudin Themes
+  13) Night owl
+  14) one Dark Pro
+  15) 
+
+
+* Flutter :
+
+  1) Awesome flutter snippets
+  2) Better Comments
+  3) Bloc
+  4) Bluloco loght theme 
+  5) Bracket Pair Colorizer 2
+  6) Color Highlight
+  7) Color Picker
+  8) Dart 
+  9) Dart Data Class Generator
+  10) Dart import
+  11) Dragon Ball theme
+  12) flutter 
+  13) flutter Colors
+  14) Flutter print tools
+  15) Flutter redux gen (FRG)
+  16) Flutter RiverPod Snippets 
+  17) Flutter Snippets 
+  18) Flutter Stacked Architecture
+  19) Flutter Tree
+  20) Flutter Widgets Snippets
+  21) Flutter MobX
+  22) Json to Dart Model
+  23) Pubspec Assist
+
+* Python : 
+
+  1) MagicPython
+  2) Python 
+  3) Python DocString generator 
+  4) Python snippets 
+  5) Sourcery
+  6) Jupyter
+  7) Pylance
+  8) Python for VsCode 
+  9) Python Indent
+  10) Preview Python
+
+
+* Others :
+  
+  1) ES7 React/Redux/GraphQl/
+  2) kotlin
+  3) Markdown All In One
+  4) Markdown Preview Enhanced
+  5) Regex Snippets 
+  6) Regex WorkBench
+  7) String Manipulation
+  8) Swift Language
+  9) ToDO Tree
+
+  1) Auto Import 
+  2) Error Lens 
+  3) GraphQl
+  4) Javascript (ES6) code snippets 
+  
+  1) TabNine AI Code Completion
+  2) VIM
+  3) Visual Studio IntelliCode
+
+
+
