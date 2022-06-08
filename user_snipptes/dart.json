@@ -1,0 +1,192 @@
+{
+    //built value
+    "Built Value": {
+        "prefix": "blt",
+        "body": [
+            "abstract class ${1} implements Built<${1}, ${1}Builder> {",
+            "\t${0:// fields go here}",
+            "",
+            "\t${1}._();",
+            "",
+            "\tfactory ${1}([updates(${1}Builder b)]) = _$${1};",
+            "}"
+        ],
+        "description": "Built Value Class"
+    },
+    "Built Value Serializable": {
+        "prefix": "blts",
+        "body": [
+            "abstract class ${1} implements Built<${1}, ${1}Builder> {",
+            "\t${0:// fields go here}",
+            "",
+            "\t${1}._();",
+            "",
+            "\tfactory ${1}([updates(${1}Builder b)]) = _$${1};",
+            "",
+            "\tString toJson() {",
+            "\t\treturn json.encode(serializers.serializeWith(${1}.serializer, this));",
+            "\t}",
+            "",
+            "\tstatic ${1} fromJson(String jsonString) {",
+            "\t\treturn serializers.deserializeWith(${1}.serializer, json.decode(jsonString));",
+            "\t}",
+            "",
+            "\tstatic Serializer<${1}> get serializer => _$${1/(^[A-z]{1})/${1:/downcase}/}Serializer;",
+            "}"
+        ],
+        "description": "Serializable Built Value Class"
+    },
+    "Built Value Header": {
+        "prefix": "blth",
+        "body": [
+            "library ${1};",
+            "",
+            "import 'dart:convert';",
+            "",
+            "import 'package:built_collection/built_collection.dart';",
+            "import 'package:built_value/built_value.dart';",
+            "import 'package:built_value/serializer.dart';",
+            "",
+            "part '${1}.g.dart';",
+        ],
+        "description": "Built Value Imports and File Header"
+    },
+    //Mobx Store
+    "MobX Store": {
+        "prefix": "ms",
+        "body": [
+            "import 'package:mobx/mobx.dart';",
+            "",
+            "part '${1}_store.g.dart';",
+            "",
+            "class ${1/(.*)/${1:/pascalcase}/g}Store extends _${1/(.*)/${1:/pascalcase}/g}Store with _$${1/(.*)/${1:/pascalcase}/g}Store {}",
+            "",
+            "abstract class _${1/(.*)/${1:/pascalcase}/g}Store with Store {",
+            "  ",
+            "}"
+        ],
+        "description": "MobX Store"
+    },
+    //freezed
+    "Part statement": {
+        "prefix": "pts",
+        "body": [
+            "part '${TM_FILENAME_BASE}.g.dart';",
+        ],
+        "description": "Creates a filled-in part statement"
+    },
+    "Part 'Freezed' statement": {
+        "prefix": "ptf",
+        "body": [
+            "part '${TM_FILENAME_BASE}.freezed.dart';",
+        ],
+        "description": "Creates a filled-in freezed part statement"
+    },
+    "Freezed Data Class": {
+        "prefix": "fdataclass",
+        "body": [
+            "@freezed",
+            "abstract class ${1:DataClass} with _$${1:DataClass}{",
+            "  const factory ${1:DataClass}(${2}) = _${1:DataClass};",
+            "}"
+        ],
+        "description": "Freezed Data Class"
+    },
+    "Freezed Union": {
+        "prefix": "funion",
+        "body": [
+            "@freezed",
+            "abstract class ${1:Union} with _$${1:Union}{",
+            "  const factory ${1:Union}.${2}(${4}) = ${3};",
+            "}"
+        ],
+        "description": "Freezed Union"
+    },
+    "Freezed Union Case": {
+        "prefix": "funioncase",
+        "body": [
+            "const factory ${1:Union}.${2}(${4}) = ${3};"
+        ],
+        "description": "Freezed Union Case"
+    },
+    "Freezed Json":{
+        "prefix": "fjson",
+        "body": [
+            "const factory ${1:DataClass}.FromJson(Map<String,dynamic> json) = _$${1:DataClass}FromJson;",
+            "Map<String, dynamic> toJson() => _$${1:DataClass}ToJson(this);"
+        ],
+        "description": "Freezed from Json"
+    },
+
+    //Test
+    "Main Test Suite Setup": {
+		"prefix": "testm",
+		"body": [
+			"import 'package:flutter_test/flutter_test.dart';",
+			"",
+			"void main() {",
+			" group('${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}} -', (){",
+			"",
+			" });",
+			"}"
+		],
+		"description": "Main Test Suite Setup"
+	},
+	"Test Group Setup": {
+		"prefix": "testg",
+		"description": "Creates a Test group with a test",
+		"body": [
+			"group('${1} -', () {",
+			" test('${2}', () {",
+			"",
+			" });",
+			"});",
+		]
+	},
+	"Single Test Setup": {
+		"prefix": "tests",
+		"description": "Creates a single test",
+		"body": [
+			" test('${1}', () {",
+			"",
+			" });",
+		]
+    },
+    
+    //pub build runner
+    "Pub Run Command":{
+        "prefix": "filegen",
+        "body":[
+            "flutter packages pub run build_runner build --delete-conflicting-outputs"
+        ],
+        "description": "Pub Build Run Command"
+    },
+
+    "Test":{
+        "prefix": "aaatest",
+        "description": "test snippet",
+        "body": [
+            "test(",
+            "\t'Should ... if ...',",
+            "\t(){",
+            "\t\t//arrange",
+            "\t\t//...",
+            "\t\t//act",
+            "\t\t//...",
+            "\t\t//assert",
+            "\t\t//...",
+            "\t}",
+            ");",
+        ]
+    },
+
+    // Class File :- Imitates the Class name from File Name
+     //freezed
+    "Class File": {
+        "prefix": "clsfile",
+        "body": [
+            "class '${TM_FILENAME_BASE}' {}",
+        ],
+        "description": "Creates a Class with name imitated from file name"
+    },
+}
